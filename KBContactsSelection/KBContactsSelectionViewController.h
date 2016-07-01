@@ -18,7 +18,7 @@
 - (void) contactsSelectionWillLoadContacts:(KBContactsSelectionViewController *)csvc;
 - (void) contactsSelectionDidLoadContacts:(KBContactsSelectionViewController *)csvc;
 
-- (void) contactsSelection:(KBContactsSelectionViewController *)selection didSelectContact:(APContact *)contact;
+- (APContact) contactsSelection:(KBContactsSelectionViewController *)selection didSelectContact:(APContact *)contact;
 - (void) contactsSelection:(KBContactsSelectionViewController *)selection didRemoveContact:(APContact *)contact;
 
 // Depracated. Use methods above.

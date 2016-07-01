@@ -157,11 +157,7 @@
     if (_configuration.customSelectButtonHandler) {
         _configuration.customSelectButtonHandler([_kBContactsTableViewDataSource selectedContacts]);
     } else {
-        if (_configuration.mode & KBContactsSelectionModeMessages) {
-            [self showMessagesViewControllerWithSelectedContacts];
-        } else {
-            [self showEmailViewControllerWithSelectedContacts];
-        }
+        return selectedContacts
     }
 }
 
